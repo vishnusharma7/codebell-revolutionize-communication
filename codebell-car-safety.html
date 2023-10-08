@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="fav-icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+    <title>Codebell</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="nav">
+        <div class="nav-content flex between">
+            <div class="logo-text"><svg width="103" height="29" viewBox="0 0 103 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.375 16.3681V16.3242C17.375 12.901 20.175 10.0352 24.0401 10.0352C27.9052 10.0352 30.664 12.8571 30.664 16.2803V16.3242C30.664 19.7473 27.864 22.6132 23.9962 22.6132C20.1283 22.6132 17.375 19.7912 17.375 16.3681ZM26.5519 16.3681V16.3242C26.5519 14.8583 25.4868 13.612 23.9962 13.612C22.4617 13.612 21.4844 14.8336 21.4844 16.2803V16.3242C21.4844 17.7901 22.5523 19.0336 24.0401 19.0336C25.5774 19.0336 26.5546 17.812 26.5546 16.3681H26.5519Z" fill="currentColor"/>
+                <path d="M31.6895 16.3682V16.3243C31.6895 12.4125 34.1353 10.0353 36.9793 10.0353C38.802 10.0353 39.8671 10.8588 40.6687 11.7674V6.10156H44.8906V22.3251H40.6687V20.7247C39.8451 21.7239 38.802 22.5914 37.0012 22.5914C34.1573 22.5914 31.6895 20.2141 31.6895 16.3682ZM40.7483 16.3243V16.2804C40.7483 14.702 39.6502 13.5682 38.3024 13.5682C36.9546 13.5682 35.8318 14.68 35.8318 16.2804V16.3243C35.8318 17.9247 36.9436 19.0694 38.3024 19.0694C39.6612 19.0694 40.7346 17.9247 40.7346 16.3243H40.7483Z" fill="currentColor"/>
+                <path d="M46.3555 16.3681V16.3242C46.3555 12.8132 48.8672 10.0352 52.4221 10.0352C56.5782 10.0352 58.4888 13.0795 58.4888 16.6234C58.4888 16.8979 58.4888 17.2026 58.4668 17.4908H50.4237C50.7559 18.803 51.7111 19.4673 53.0233 19.4673C54.0225 19.4673 54.8214 19.0912 55.6888 18.2457L58.0221 20.1673C56.8664 21.6359 55.2002 22.6132 52.8064 22.6132C49.0237 22.6132 46.3555 20.1014 46.3555 16.3681ZM54.5331 15.325C54.3794 13.9908 53.5998 13.1454 52.4441 13.1454C51.3323 13.1454 50.5774 14.0128 50.3551 15.325H54.5331Z" fill="currentColor"/>
+                <path d="M64.2024 20.8702V22.3251H59.9805V6.10156H64.2024V11.902C65.026 10.9027 66.0471 10.0353 67.8452 10.0353C70.7138 10.0353 73.1789 12.4125 73.1789 16.2584V16.3023C73.1789 20.2141 70.7083 22.5914 67.8699 22.5914C67.1667 22.6101 66.4689 22.4643 65.8322 22.1654C65.1954 21.8666 64.6373 21.423 64.2024 20.8702ZM69.0256 16.338V16.2941C69.0256 14.7157 67.9275 13.582 66.555 13.582C65.1824 13.582 64.1091 14.7157 64.1091 16.2941V16.338C64.1091 17.9384 65.2071 19.0831 66.555 19.0831C67.9028 19.0831 69.0256 17.9467 69.0256 16.3243V16.338Z" fill="currentColor"/>
+                <path d="M74.1992 16.3681V16.3242C74.1992 12.8132 76.711 10.0352 80.2659 10.0352C84.422 10.0352 86.3326 13.0795 86.3326 16.6234C86.3326 16.8979 86.3326 17.2026 86.3106 17.4908H78.2675C78.6024 18.803 79.5577 19.4673 80.8671 19.4673C81.869 19.4673 82.6678 19.0912 83.5353 18.2457L85.8686 20.1673C84.7129 21.6359 83.0467 22.6132 80.6529 22.6132C76.8675 22.6132 74.1992 20.1014 74.1992 16.3681ZM82.3769 15.325C82.2204 13.9908 81.4435 13.1454 80.2878 13.1454C79.1761 13.1454 78.4212 14.0128 78.1988 15.325H82.3769Z" fill="currentColor"/>
+                <path d="M87.9258 6.10156H92.1477V22.3251H87.9258V6.10156Z" fill="currentColor"/>
+                <path d="M94.2695 6.10156H98.4915V22.3251H94.2695V6.10156Z" fill="currentColor"/>
+                <path d="M16.8284 10.9086H5.54334C5.53242 10.909 5.52154 10.9071 5.51138 10.9031C5.50121 10.8991 5.49198 10.8931 5.48425 10.8854C5.47653 10.8776 5.47048 10.8684 5.46648 10.8582C5.46247 10.8481 5.4606 10.8372 5.46099 10.8263V10.6671C5.46099 9.56236 5.89964 8.50287 6.68052 7.72147C7.4614 6.94008 8.5206 6.50073 9.6253 6.5H12.7547C13.8594 6.50073 14.9186 6.94008 15.6995 7.72147C16.4804 8.50287 16.919 9.56236 16.919 10.6671V10.8263C16.9164 10.8486 16.9058 10.8692 16.8891 10.8844C16.8725 10.8995 16.8509 10.9081 16.8284 10.9086Z" fill="currentColor"/>
+                <path d="M12.5037 18.1875H5.45703C5.45557 19.3546 5.91724 20.4746 6.74069 21.3016C7.56415 22.1287 8.68211 22.5952 9.84919 22.5989H16.9096C16.9099 22.0199 16.7963 21.4466 16.575 20.9116C16.3538 20.3765 16.0294 19.8903 15.6203 19.4807C15.2111 19.0711 14.7253 18.746 14.1906 18.5241C13.6559 18.3022 13.0827 18.1879 12.5037 18.1875Z" fill="currentColor"/>
+                <path d="M10.5135 18.1909H5.45703V10.6502C5.45667 10.1065 5.56339 9.56818 5.77109 9.0658C5.97879 8.56342 6.28341 8.10687 6.66755 7.72222C7.0517 7.33756 7.50784 7.03234 8.00994 6.82397C8.51205 6.6156 9.05027 6.50817 9.59389 6.50781H10.5135V18.1909Z" fill="currentColor"/>
+                </svg></div>
+            <div class="links flex " style="font-weight:600; gap:2em">
+                <a href="#Home">Home</a>
+                <a href="#Feature">Feature</a>
+                <a href="#About">About</a>
+                <a href="#Product">Product</a>
+                <a href="#Faq">Faq</a>
+                <a href="#Testimonial">Testimonial</a>
+                <a href="contact.html">Contact</a>
+                <a href="demo.html">Demo</a>
+            </div>
+            <div class="social-links flex" style="gap: 1em;">
+                <div class="social-icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path
+                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                    </svg>
+                </div>
+                <div class="social-icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                    </svg>
+                </div>
+                <div class="social-icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                    </svg>
+                </div>
+                <div class="social-icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="mobile-view-menu-icon" id="mobile-menu-icon" style="display: none;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </div>
+            <div class="dropdown-menu">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Feature">Feature</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Product">Product</a></li>
+                    <li><a href="#Faq">Faq</a></li>
+                    <li><a href="#Testimonial">Testimonial</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="demo.html">Demo</a></li>
+                </ul>
+                <div class="links-mob">
+                    <div class="social-icons-mob">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path
+                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                        </svg>
+                    </div>
+                    <div class="social-icons-mob">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg>
+                    </div>
+                    <div class="social-icons-mob">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                    </div>
+                    <div class="social-icons-mob">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main blog section -->
+    <div class="grey-section">
+        <div class="color-blur"></div>
+        <section class="blog-content">
+            <div class="section-title">
+                <div class="title-1">Codebell Car Safety Tag - What is it and What are its Advantages?</div>
+                <div class="title-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                    viewBox="0 0 16 16">
+                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                </svg>
+                    <h4>Discover how Codebell's car safety tag technology is revolutionizing communication, solving obtrusive parking, towing, and privacy challenges</h4>
+                   
+                    <!-- <h4 style="color: var(--text-color);">26 June, 2023</h4> -->
+                   
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <section class="blogs-main-container">
+        <div class="blogs-main-left">
+            <img src="https://codebell.io/assets/img/car_parking_issues.webp" alt="">
+            <div class="blogs-desc">
+                <div class="desc1">
+                    <p style="font-weight: 500; color:var(--text-color)">Posted On:</p>
+                    <p style="color: var(--sub-text-color);">26 June, 2023</p>
+                </div>
+                <span style="color: var(--primary-color); font-weight:500">-</span>
+                <div class="desc1">
+                    <p style="font-weight: 500; color:var(--text-color)">Posted By:</p>
+                    <p style="color: var(--sub-text-color);">John Anderson</p>
+                </div>
+
+            </div>
+            <p>Imagine this: you’re heading to a mall or a restaurant, ready to enjoy your time, perhaps along with friends and family. However, when you reach there, you find a tightly-packed parking lot that can barely squeeze in another car. You look around, but there’s no attendant there to help you out. You can’t leave your car there unattended, obstructing other vehicles. Perhaps someone might find this too annoying and even damage your car!</p>
+            <div class="blogs-box-content">
+                <p>What can you do in this scenario? Codebell has the solution!</p>
+            </div>
+            <p>Well, Codebell has introduced an innovative solution that aims to revolutionize communication through the innovative Car Safety Tag technology. It comprises a vehicle tag with a scannable QR code, which you can stick to your vehicle. If someone wishes to communicate with you, all they need to do is scan the QR code, and they’ll instantly be connected to you via a audio/video call.</p>
+            <p>Innovative, isn’t it? Well, this isn’t the only challenge Codebell tackles!</p>
+            <p>Let’s delve a little deeper into the core issues Codebell's car safety tag solves and explores how its technology enhances convenience, safety, and efficiency.</p>
+            
+            <!-- <div class="blogs-images">
+                <img src="https://templates.hibootstrap.com/zebu/default/assets/img/blog/blog4.jpg" alt="">
+                <img src="https://templates.hibootstrap.com/zebu/default/assets/img/blog/blog4.jpg" alt="">
+                <img src="https://templates.hibootstrap.com/zebu/default/assets/img/blog/blog4.jpg" alt="">
+            </div> -->
+            <h2 style="color: var(--text-color);">1. Wrong Parking/Obstructive Parking</h2>
+            <p>As stated above, one of the primary frustrations for car drivers is finding improperly parked vehicles that obstruct traffic flow, on the road or in a parking lot. Such instances often lead to road rage and even vehicle damage. Codebell's ingenious solution comes to the rescue by allowing individuals to easily contact vehicle owners through a simple scan of the QR code affixed to the windshield. This seamless communication channel eliminates the need for confrontations and enables swift resolution, promoting harmony on the roads and mitigating the risk of any vehicular damage.</p>
+            <h2>2. Vehicle Towed Away by Traffic Police</h2>
+            <p>Another challenge faced by drivers is the fear of having their vehicles towed away due to parking violations, especially when you leave your car by the side of a road. Often, car owners run from pillar to post, just to find out that their car has been taken away by the cops. Codebell comes in handy in these situations. With Codebell, vehicle owners can receive real-time notifications from the traffic police, alerting them to the issue. This immediate communication empowers owners to rectify the situation promptly, preventing unnecessary inconvenience and potential costs associated with vehicle impoundment.</p>
+            <h2>3. Accident/First Responders' Connection</h2>
+            <p>During accidents, first responders often face difficulties in contacting the family members or emergency contacts of the involved parties. Codebell offers a practical solution by enabling emergency responders to initiate video calls with the vehicle owner's registered contacts. This swift connection allows them to promptly inform loved ones about the situation, enhancing the overall response time and ensuring that families receive crucial information without delay.</p>
+           <h2>4. Privacy and Spam Calls</h2> 
+           <p>When parking their vehicle in an obstructive manner, thoughtful drivers often leave their contact information on its windshield. However, it exposes them to privacy breaches, unsolicited calls, and worst of all, financial scams. Codebell eliminates this concern by offering a secure and direct communication channel. Visitors can simply scan the QR code, initiating a video call without the need for exchanging personal phone numbers. This ensures privacy protection while facilitating effective communication between visitors and vehicle owners.</p>
+            <h2>5. No App Download Required</h2>
+            <p>With the ever-increasing number of apps for every task, visitors often hesitate to download yet another application solely for a specific interaction. Codebell resolves this reluctance by eliminating the need for app downloads. Through a simple QR code scan, visitors can instantly establish a video call, providing a seamless and hassle-free experience. This user-friendly approach enhances accessibility, ensuring that anyone with a smartphone can utilize the Codebell service without any additional steps or requirements.</p>
+            <h2>Conclusion</h2>
+            <p>Codebell's innovative scan-to-call technology is revolutionizing communication for vehicle owners. By addressing prevalent challenges such as wrong parking, vehicle towing, accident response, privacy invasion, and app fatigue, Codebell enhances convenience, safety, and efficiency for both vehicle owners and any concerned party. With its seamless and secure communication platform, Codebell paves the way for a more harmonious and interconnected automotive ecosystem.</p>
+            
+            
+            <div class="row shares">
+                <div class="row" style="color: var(--text-color);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-bookmark" viewBox="0 0 16 16">
+                        <path
+                            d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                    </svg>
+                    <p style="white-space: nowrap;"> Codebell, Limitless</p>
+                </div>
+                <div class="row share-p">
+                    <p style="font-size:1.2em; font-weight:500">Share: </p>
+                    <div class="iwrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                    </div>
+                    <div class="iwrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path
+                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                        </svg>
+                    </div>
+                    <div class="iwrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg>
+                    </div>
+                    <div class="iwrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row prev-next">
+                <a href="intercom-vs-codebell.html"><div class="row" style="cursor: pointer;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                    </svg>
+                    <p style="font-size:1.2em; font-weight:500">Prev Post</p>
+                </div></a>
+                <a href="intercom-vs-codebell.html"><div class="row" style="cursor: pointer;">
+
+                    <p style="font-size:1.2em; font-weight:500">Next Post</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                    </svg>
+                </div></a>
+            </div>
+            <hr>
+
+        </div>
+
+        <div class="blogs-main-right">
+            <div class="s-wrap">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <div class="s-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <h2>Popular Posts</h2>
+
+            <hr class="hr-custom">
+
+            <div class="common-container">
+                <div class="row">
+                    <div class="row popular-post">
+                        <img src="https://codebell.io/assets/img/car_parking_issues.webp" alt="">
+                        <div class="column">
+                            <p>26 June, 2023</p>
+                            <h4>Codebell Car Safety Tag</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row popular-post">
+                        <img src="https://codebell.io/assets/img/intercome.jpg" alt="">
+                        <div class="column">
+                            <p>April 30, 2021</p>
+                            <h4>Intercom Vs Codebell </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row popular-post">
+                        <img src="https://codebell.io/assets/img/intercome.jpg" alt="">
+                        <div class="column">
+                            <p>April 30, 2021</p>
+                            <h4>Intercom Vs Codebell </h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <h2>Meta</h2>
+            <hr class="hr-custom">
+            <div class="common-container">
+                <div class="row categories">
+                    <div class="dot"></div>
+
+                    <p><a href="index.html">Codebell Standard</a></p>
+
+
+
+                   
+                </div>
+                <div class="row categories">
+                    <div class="dot"></div>
+                    <p><a href="home.html">Codebell Home</a></p>
+                </div>
+                <div class="row categories">
+                    <div class="dot"></div>
+                    <p><a href="car.html">Codebell car</a></p>
+                </div>
+                <div class="row categories">
+                    <div class="dot"></div>
+                    <p><a href="pet_tag.html">Codebell Pet Tag</a></p>
+                </div>
+                <div class="row categories">
+                    <div class="dot"></div>
+                    <p><a href="luggage_tag.html">Codebell Luggage Tags</a></p>
+                </div>
+
+            </div>
+
+            <h2>Archives</h2>
+
+            <hr class="hr-custom">
+            <div class="common-container">
+                <div class="row categories">
+                    <div class="dot"></div>
+                    <p>May 2021</p>
+                </div>
+                <div class="row categories">
+                    <div class="dot"></div>
+                    <p>April 2021</p>
+                </div>
+                <div class="row categories">
+                    <div class="dot"></div>
+                    <p>June 2021</p>
+                </div>
+
+            </div>
+
+
+            <h2>Tags</h2>
+            <hr class="hr-custom">
+            <div class="tag-container">
+                <p>Codebell</p>
+                <p>Contactless</p>
+                <p>Internet</p>
+                <p>Wireless</p>
+                <p>EasyLife</p>
+                <p>Smart</p>
+                <p>Marketing</p>
+                <p>Tips</p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <div class="footer-container grey-section">
+        <section class="footer-content">
+            <div class="footer-column">
+                <div class="company-logo">
+                    <h3 class="logo-codebell"><svg width="103" height="29" viewBox="0 0 103 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.375 16.3681V16.3242C17.375 12.901 20.175 10.0352 24.0401 10.0352C27.9052 10.0352 30.664 12.8571 30.664 16.2803V16.3242C30.664 19.7473 27.864 22.6132 23.9962 22.6132C20.1283 22.6132 17.375 19.7912 17.375 16.3681ZM26.5519 16.3681V16.3242C26.5519 14.8583 25.4868 13.612 23.9962 13.612C22.4617 13.612 21.4844 14.8336 21.4844 16.2803V16.3242C21.4844 17.7901 22.5523 19.0336 24.0401 19.0336C25.5774 19.0336 26.5546 17.812 26.5546 16.3681H26.5519Z" fill="currentColor"/>
+                        <path d="M31.6895 16.3682V16.3243C31.6895 12.4125 34.1353 10.0353 36.9793 10.0353C38.802 10.0353 39.8671 10.8588 40.6687 11.7674V6.10156H44.8906V22.3251H40.6687V20.7247C39.8451 21.7239 38.802 22.5914 37.0012 22.5914C34.1573 22.5914 31.6895 20.2141 31.6895 16.3682ZM40.7483 16.3243V16.2804C40.7483 14.702 39.6502 13.5682 38.3024 13.5682C36.9546 13.5682 35.8318 14.68 35.8318 16.2804V16.3243C35.8318 17.9247 36.9436 19.0694 38.3024 19.0694C39.6612 19.0694 40.7346 17.9247 40.7346 16.3243H40.7483Z" fill="currentColor"/>
+                        <path d="M46.3555 16.3681V16.3242C46.3555 12.8132 48.8672 10.0352 52.4221 10.0352C56.5782 10.0352 58.4888 13.0795 58.4888 16.6234C58.4888 16.8979 58.4888 17.2026 58.4668 17.4908H50.4237C50.7559 18.803 51.7111 19.4673 53.0233 19.4673C54.0225 19.4673 54.8214 19.0912 55.6888 18.2457L58.0221 20.1673C56.8664 21.6359 55.2002 22.6132 52.8064 22.6132C49.0237 22.6132 46.3555 20.1014 46.3555 16.3681ZM54.5331 15.325C54.3794 13.9908 53.5998 13.1454 52.4441 13.1454C51.3323 13.1454 50.5774 14.0128 50.3551 15.325H54.5331Z" fill="currentColor"/>
+                        <path d="M64.2024 20.8702V22.3251H59.9805V6.10156H64.2024V11.902C65.026 10.9027 66.0471 10.0353 67.8452 10.0353C70.7138 10.0353 73.1789 12.4125 73.1789 16.2584V16.3023C73.1789 20.2141 70.7083 22.5914 67.8699 22.5914C67.1667 22.6101 66.4689 22.4643 65.8322 22.1654C65.1954 21.8666 64.6373 21.423 64.2024 20.8702ZM69.0256 16.338V16.2941C69.0256 14.7157 67.9275 13.582 66.555 13.582C65.1824 13.582 64.1091 14.7157 64.1091 16.2941V16.338C64.1091 17.9384 65.2071 19.0831 66.555 19.0831C67.9028 19.0831 69.0256 17.9467 69.0256 16.3243V16.338Z" fill="currentColor"/>
+                        <path d="M74.1992 16.3681V16.3242C74.1992 12.8132 76.711 10.0352 80.2659 10.0352C84.422 10.0352 86.3326 13.0795 86.3326 16.6234C86.3326 16.8979 86.3326 17.2026 86.3106 17.4908H78.2675C78.6024 18.803 79.5577 19.4673 80.8671 19.4673C81.869 19.4673 82.6678 19.0912 83.5353 18.2457L85.8686 20.1673C84.7129 21.6359 83.0467 22.6132 80.6529 22.6132C76.8675 22.6132 74.1992 20.1014 74.1992 16.3681ZM82.3769 15.325C82.2204 13.9908 81.4435 13.1454 80.2878 13.1454C79.1761 13.1454 78.4212 14.0128 78.1988 15.325H82.3769Z" fill="currentColor"/>
+                        <path d="M87.9258 6.10156H92.1477V22.3251H87.9258V6.10156Z" fill="currentColor"/>
+                        <path d="M94.2695 6.10156H98.4915V22.3251H94.2695V6.10156Z" fill="currentColor"/>
+                        <path d="M16.8284 10.9086H5.54334C5.53242 10.909 5.52154 10.9071 5.51138 10.9031C5.50121 10.8991 5.49198 10.8931 5.48425 10.8854C5.47653 10.8776 5.47048 10.8684 5.46648 10.8582C5.46247 10.8481 5.4606 10.8372 5.46099 10.8263V10.6671C5.46099 9.56236 5.89964 8.50287 6.68052 7.72147C7.4614 6.94008 8.5206 6.50073 9.6253 6.5H12.7547C13.8594 6.50073 14.9186 6.94008 15.6995 7.72147C16.4804 8.50287 16.919 9.56236 16.919 10.6671V10.8263C16.9164 10.8486 16.9058 10.8692 16.8891 10.8844C16.8725 10.8995 16.8509 10.9081 16.8284 10.9086Z" fill="currentColor"/>
+                        <path d="M12.5037 18.1875H5.45703C5.45557 19.3546 5.91724 20.4746 6.74069 21.3016C7.56415 22.1287 8.68211 22.5952 9.84919 22.5989H16.9096C16.9099 22.0199 16.7963 21.4466 16.575 20.9116C16.3538 20.3765 16.0294 19.8903 15.6203 19.4807C15.2111 19.0711 14.7253 18.746 14.1906 18.5241C13.6559 18.3022 13.0827 18.1879 12.5037 18.1875Z" fill="currentColor"/>
+                        <path d="M10.5135 18.1909H5.45703V10.6502C5.45667 10.1065 5.56339 9.56818 5.77109 9.0658C5.97879 8.56342 6.28341 8.10687 6.66755 7.72222C7.0517 7.33756 7.50784 7.03234 8.00994 6.82397C8.51205 6.6156 9.05027 6.50817 9.59389 6.50781H10.5135V18.1909Z" fill="currentColor"/>
+                        </svg>
+                    </h3>
+                </div>
+                <p class="text-4">QR Communication, intercom & tracking technology.</p>
+                <div class="social-links-company">
+                    <a href="https://www.facebook.com/codebell.io"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/codebell.io/"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/codebell_io"><svg xmlns="http://www.w3.org/2000/svg" width="18"
+                            height="18" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path
+                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/company/codebell/"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Products</h3>
+                <p><a href="index.html">Codebell Standard</a></p>
+                <p><a href="home.html">Codebell Home</a></p>
+                <p><a href="car.html">Codebell car</a></p>
+                <p><a href="pet_tag.html">Codebell Pet Tag</a></p>
+                <p><a href="luggage_tag.html">Codebell Luggage Tags</a></p>
+            </div>
+            <div class="footer-column">
+                <h3>Pages</h3>
+                <p><a href="">Search</a></p>
+                <p><a href="about_us.html">About Us</a></p>
+                <p><a href="contact.html">Contact Us</a></p>
+                <p><a href="">Become a stockist</a></p>
+                <p><a href="">Join the affiliate programme</a></p>
+            </div>
+            <div class="footer-column">
+                <h3>Get in touch</h3>
+                <p><a href="">support@CodeBell.io</a></p>
+                <p><a href="">business@Codebell.io</a></p>
+                <a href="https://www.instagram.com/codebell.io/">
+                    <div class="follow-button">
+                        <div class="btn-f">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-heart" viewBox="0 0 16 16">
+                                <path
+                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                            </svg>
+                            <p>Follow on</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    
+    
+        <div class="links-footers">
+            <p>© 2023, Codebell proudly made in Bharat in (India) </p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot"
+                viewBox="0 0 16 16">
+                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+            </svg>
+            <a href="refund_policy.html">Refund policy</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot"
+                viewBox="0 0 16 16">
+                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+            </svg>
+            <a href="privacy.html">Privacy policy</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot"
+                viewBox="0 0 16 16">
+                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+            </svg>
+            <a href="terms_of_service.html">Terms of service</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot"
+                viewBox="0 0 16 16">
+                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+            </svg>
+            <a href="shipping_policy.html">Shipping policy </a>
+        </div>
+    
+    </div>
+    
+    <script src="allColorTheme.js"></script>
+    <script src="https://device.codebell.io/js/image-token.js"></script>
+    <script src="insta-image-api.js"></script>
+    <script src="main.js"></script>
+    <script src="darkmode.js"></script>
+    </body>
+    
+    </html>

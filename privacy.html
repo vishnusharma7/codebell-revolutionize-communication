@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="fav-icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+    <title>Codebell</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="nav" style="background-color:var(--bg-color);">
+        <div class="nav-content flex between">
+            <div class="logo-text"><svg width="103" height="29" viewBox="0 0 103 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.375 16.3681V16.3242C17.375 12.901 20.175 10.0352 24.0401 10.0352C27.9052 10.0352 30.664 12.8571 30.664 16.2803V16.3242C30.664 19.7473 27.864 22.6132 23.9962 22.6132C20.1283 22.6132 17.375 19.7912 17.375 16.3681ZM26.5519 16.3681V16.3242C26.5519 14.8583 25.4868 13.612 23.9962 13.612C22.4617 13.612 21.4844 14.8336 21.4844 16.2803V16.3242C21.4844 17.7901 22.5523 19.0336 24.0401 19.0336C25.5774 19.0336 26.5546 17.812 26.5546 16.3681H26.5519Z" fill="currentColor"/>
+                <path d="M31.6895 16.3682V16.3243C31.6895 12.4125 34.1353 10.0353 36.9793 10.0353C38.802 10.0353 39.8671 10.8588 40.6687 11.7674V6.10156H44.8906V22.3251H40.6687V20.7247C39.8451 21.7239 38.802 22.5914 37.0012 22.5914C34.1573 22.5914 31.6895 20.2141 31.6895 16.3682ZM40.7483 16.3243V16.2804C40.7483 14.702 39.6502 13.5682 38.3024 13.5682C36.9546 13.5682 35.8318 14.68 35.8318 16.2804V16.3243C35.8318 17.9247 36.9436 19.0694 38.3024 19.0694C39.6612 19.0694 40.7346 17.9247 40.7346 16.3243H40.7483Z" fill="currentColor"/>
+                <path d="M46.3555 16.3681V16.3242C46.3555 12.8132 48.8672 10.0352 52.4221 10.0352C56.5782 10.0352 58.4888 13.0795 58.4888 16.6234C58.4888 16.8979 58.4888 17.2026 58.4668 17.4908H50.4237C50.7559 18.803 51.7111 19.4673 53.0233 19.4673C54.0225 19.4673 54.8214 19.0912 55.6888 18.2457L58.0221 20.1673C56.8664 21.6359 55.2002 22.6132 52.8064 22.6132C49.0237 22.6132 46.3555 20.1014 46.3555 16.3681ZM54.5331 15.325C54.3794 13.9908 53.5998 13.1454 52.4441 13.1454C51.3323 13.1454 50.5774 14.0128 50.3551 15.325H54.5331Z" fill="currentColor"/>
+                <path d="M64.2024 20.8702V22.3251H59.9805V6.10156H64.2024V11.902C65.026 10.9027 66.0471 10.0353 67.8452 10.0353C70.7138 10.0353 73.1789 12.4125 73.1789 16.2584V16.3023C73.1789 20.2141 70.7083 22.5914 67.8699 22.5914C67.1667 22.6101 66.4689 22.4643 65.8322 22.1654C65.1954 21.8666 64.6373 21.423 64.2024 20.8702ZM69.0256 16.338V16.2941C69.0256 14.7157 67.9275 13.582 66.555 13.582C65.1824 13.582 64.1091 14.7157 64.1091 16.2941V16.338C64.1091 17.9384 65.2071 19.0831 66.555 19.0831C67.9028 19.0831 69.0256 17.9467 69.0256 16.3243V16.338Z" fill="currentColor"/>
+                <path d="M74.1992 16.3681V16.3242C74.1992 12.8132 76.711 10.0352 80.2659 10.0352C84.422 10.0352 86.3326 13.0795 86.3326 16.6234C86.3326 16.8979 86.3326 17.2026 86.3106 17.4908H78.2675C78.6024 18.803 79.5577 19.4673 80.8671 19.4673C81.869 19.4673 82.6678 19.0912 83.5353 18.2457L85.8686 20.1673C84.7129 21.6359 83.0467 22.6132 80.6529 22.6132C76.8675 22.6132 74.1992 20.1014 74.1992 16.3681ZM82.3769 15.325C82.2204 13.9908 81.4435 13.1454 80.2878 13.1454C79.1761 13.1454 78.4212 14.0128 78.1988 15.325H82.3769Z" fill="currentColor"/>
+                <path d="M87.9258 6.10156H92.1477V22.3251H87.9258V6.10156Z" fill="currentColor"/>
+                <path d="M94.2695 6.10156H98.4915V22.3251H94.2695V6.10156Z" fill="currentColor"/>
+                <path d="M16.8284 10.9086H5.54334C5.53242 10.909 5.52154 10.9071 5.51138 10.9031C5.50121 10.8991 5.49198 10.8931 5.48425 10.8854C5.47653 10.8776 5.47048 10.8684 5.46648 10.8582C5.46247 10.8481 5.4606 10.8372 5.46099 10.8263V10.6671C5.46099 9.56236 5.89964 8.50287 6.68052 7.72147C7.4614 6.94008 8.5206 6.50073 9.6253 6.5H12.7547C13.8594 6.50073 14.9186 6.94008 15.6995 7.72147C16.4804 8.50287 16.919 9.56236 16.919 10.6671V10.8263C16.9164 10.8486 16.9058 10.8692 16.8891 10.8844C16.8725 10.8995 16.8509 10.9081 16.8284 10.9086Z" fill="currentColor"/>
+                <path d="M12.5037 18.1875H5.45703C5.45557 19.3546 5.91724 20.4746 6.74069 21.3016C7.56415 22.1287 8.68211 22.5952 9.84919 22.5989H16.9096C16.9099 22.0199 16.7963 21.4466 16.575 20.9116C16.3538 20.3765 16.0294 19.8903 15.6203 19.4807C15.2111 19.0711 14.7253 18.746 14.1906 18.5241C13.6559 18.3022 13.0827 18.1879 12.5037 18.1875Z" fill="currentColor"/>
+                <path d="M10.5135 18.1909H5.45703V10.6502C5.45667 10.1065 5.56339 9.56818 5.77109 9.0658C5.97879 8.56342 6.28341 8.10687 6.66755 7.72222C7.0517 7.33756 7.50784 7.03234 8.00994 6.82397C8.51205 6.6156 9.05027 6.50817 9.59389 6.50781H10.5135V18.1909Z" fill="currentColor"/>
+                </svg></div>
+            <div class="links flex " style="font-weight:600; gap:2em">
+                <a href="#Home">Home</a>
+                <a href="#Feature">Feature</a>
+                <a href="#About">About</a>
+                <a href="#Product">Product</a>
+                <a href="#Faq">Faq</a>
+                <a href="#Testimonial">Testimonial</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="social-links flex" style="gap: 1em;">
+                <div class="social-icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path
+                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                    </svg>
+                </div>
+                <div class="social-icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                    </svg>
+                </div>
+                <div class="social-icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                    </svg>
+                </div>
+                <div class="social-icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="mobile-view-menu-icon" id="mobile-menu-icon" style="display: none;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </div>
+            <div class="dropdown-menu">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Feature">Feature</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Product">Product</a></li>
+                    <li><a href="#Faq">Faq</a></li>
+                    <li><a href="#Testimonial">Testimonial</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+                <div class="links-mob">
+                    <div class="social-icons-mob">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path
+                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                        </svg>
+                    </div>
+                    <div class="social-icons-mob">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg>
+                    </div>
+                    <div class="social-icons-mob">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                    </div>
+                    <div class="social-icons-mob">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="privacy-contents">
+        <div class="color-blur"></div>
+
+        <div class="p-title">
+            <h1>PRIVACY POLICY</h1>
+        </div>
+        <div class="all-content">
+            <p>This privacy policy (“Policy”) describes how Codebell Technologies Pvt. Ltd. (herein and after referred
+                to as “Codebell”, “We”, “us”, “our”) collects, uses, and shares personal information of users of our
+                Application, CODEBELL and our website hosted at www.codebell.io set up for our customers (together, the
+                “Site”), as well as associated products and services, (together, the “Services”), and applies to
+                information that we collect through our Site and Services as well as information you provide to us
+                directly. This Policy also applies to any of our other websites that post this Policy.
+
+                At Codebell, your privacy is always a priority. This Privacy Policy explains (i) what information we
+                collect through your access and use of our Service (ii) the use we make of such information; and (iii)
+                the security level we provide for protecting such information. This Privacy Policy also sets out without
+                limitation, how Codebell, collects and uses information from customers and other individuals who access
+                or use our Services. By downloading our mobile application and/or using our Services, you understand
+                that we will collect and use your information as described in this Privacy Policy and accept the
+                practices outlined in this Privacy Policy.
+
+                This Privacy Policy (“Policy”) does not apply to any third-party websites and apps that you may use,
+                including any that are linked to in our Services. You should review the terms and policies for
+                third-party websites and apps before clicking on any links.
+
+                If you do not agree to this Policy, please do not use our Sites or applications or Services.</p>
+
+            <h4>1. WHO ARE WE</h4>
+
+            <p>Codebell Technologies Private Limited is an Indian Company registered under the Companies Act, 2013,
+                providing access management services through innovative QR code-based video door phone. The mobile
+                application further facilitates hyperlocal advertisements in around the locality of the users.
+
+                The Company is domiciled in India at the following address:
+
+                Codebell Technologies Private Limited 55, 2nd Floor, Lane 2, Westend Marg, Saidullajab, Near Saket Metro
+                Station, New Delhi 110030 Delhi, India.
+
+                All data storage infrastructure is located solely within India, and thus governed by the laws and
+                regulations of India.</p>
+            <h4>2. DATA WE COLLECT</h4>
+            <p>Our company’s overriding policy is to collect as little user information as possible to ensure a
+                completely private user experience when using the Service. Our data collection is limited to the
+                following:</p>
+            <div class="bullet">
+                <p>a.</p>
+                <p>Account Creation: </p>
+
+
+            </div>
+            <p>Any user signing up for a User Account on Codebell is requested for the following personal
+                information:</p>
+            <div class="under-sub">
+
+                <ul>
+                    <li>Name </li>
+                    <li>Mobile Number</li>
+                    <li>Email id</li>
+                    <li>Gender</li>
+                    <li>Complete Residential Address</li>
+                    <li>Precise gelocation</li>
+                </ul>
+            </div>
+            <div class="bullet">
+                <p>b.</p>
+                <p>Information We Get From Other Parties: <br>
+
+                    We may get information about you from other sources. We may add this to information we get from this
+                    Site and/or through our Services. For example, you may also be able to access your Codebell account
+                    by signing on through various sites such as Google. Your participation with the services provided on
+                    these platforms is voluntary. If you choose to sign on using this service, Codebell will collect
+                    certain information from your account including your public profile, user name, email address,
+                    birthday, stated location city, contact lists, and other interactions on that platform (such as
+                    interests and likes). The information we may have access to will vary by platform and is controlled
+                    by privacy settings on that platform and your choices on that platform. Your use of services on
+                    third party platforms are governed by the privacy statement and other terms of use for that third
+                    party platform, until such information is shared with us, and then such information is also subject
+                    to this Policy. </p>
+
+
+            </div>
+            <div class="bullet">
+                <p>c.</p>
+                <p>Information collected when you visit our Sites or use our Applications:<br>
+
+                    We automatically log information about you and your computer, phone, tablet, or other devices you
+                    use to access the Site and/or Services. For example, when visiting our Site or when using Codebell
+                    mobile applications, we log your computer or device identification, operating system type, network
+                    information, geo location, browser type, browser language, the website you visited before browsing
+                    to our Site, pages you viewed, how long you spent on a page, access times and information about your
+                    use of and actions on our Site or in Codebell mobile application including facial image captures
+                    when making a call as a visitor and live recording of video calls on Codebell Application. How much
+                    of this information we collect depends on the type and settings of the device you use to access the
+                    Site and/or Services. </p>
+
+
+            </div>
+            <div class="bullet">
+                <p>d.</p>
+                <p>Information collected from you:<br>
+
+                    If you choose to interact on the Site and/or through the Services, Codebell will collect the
+                    personal information that you provide such as ad preferences. </p>
+
+
+            </div>
+            <div class="bullet">
+                <p>e.</p>
+                <p>Cookies and Other Tracking Technologies:<br>
+
+                    We and our authorized partners may use cookies and other information gathering technologies for a
+                    variety of purposes. These technologies may provide us with personal information, information about
+                    devices and networks you utilize to access our Sites, and other information regarding your
+                    interactions with our Sites. For detailed information about the use of cookies in the Sites, please
+                    read and review our Cookie Policy.
+
+                    We partner with third parties to either display advertising on the Sites or to manage our
+                    advertising on other sites. Our third-party partners may also use technologies such as cookies to
+                    gather information about your activities on our Sites and other sites in order to suggest
+                    advertisements based upon your browsing activities and interests. If you wish to not have this
+                    information used for the purpose of serving you interest-based ads, you may opt-out by clicking
+                    here.
+
+                    Web beacons, tags and scripts may be used on our Sites or in email or other electronic
+                    communications we send to you. These assist us in delivering cookies, counting visits to our Sites,
+                    understanding usage and campaign effectiveness and determining whether an email has been opened and
+                    acted upon. We may receive reports based on the use of these technologies by our third-party service
+                    providers on an individual and aggregated basis.
+
+                    We use Local Storage Objects (“LSOs”) such as HTML5 to store content information and preferences.
+                    Various browsers may offer their own management tools for removing HTML5 LSOs. Third parties with
+                    whom we partner to provide certain features on our Sites or to display advertising based upon your
+                    web browsing activity use LSOs such as HTML5 to collect and store information.</p>
+
+
+            </div>
+            <div class="bullet">
+                <p>f.</p>
+                <p>Logs and Analytics Information:<br>
+
+                    As is true with most websites and services delivered over the Internet, we gather certain
+                    information and store it in log files when you interact with our Sites and Services. This
+                    information includes internet protocol (IP) addresses as well as browser type, internet service
+                    provider, URLs of referring/exit pages, operating system, date/time stamp, information you search
+                    for, locale and language preferences, identification numbers associated with your devices, your
+                    mobile carrier, and system configuration information. Occasionally, we connect personal information
+                    to information gathered in our log files as necessary to improve our Sites and Services. In such a
+                    case, we would treat the combined information in accordance with this Policy. </p>
+
+
+            </div>
+
+            <h4>3. WHY IS THIS DATA REQUIRED AND/OR PROCESSED AND LEGAL BASIS OF PROCESSING
+            </h4>
+            <p>How we use the information we collect depends in part on which Services you use, how you use them, and
+                any preferences you have communicated to us. Below are the specific purposes for which we use the
+                information we collect about you. We use your personal information as follows:</p>
+            <div class="bullet">
+                <p>a.</p>
+                <p>General Uses:<br>
+
+                    The Legal basis for collecting your information is that we use the information to provide the
+                    Services to you. We may use the information we collect about you (including personal information, to
+                    the extent applicable) for a variety of purposes, including to (a) provide, operate, maintain,
+                    improve, and promote the Services; (b) enable you to access and use the Services; (c) process and
+                    complete transactions, and send you related information, including purchase confirmations and
+                    invoices; (d) send transactional messages, including responses to your comments, questions, and
+                    requests; provide customer service and support; and send you technical notices, updates, security
+                    alerts, and support and administrative messages; (e) send promotional communications, such as
+                    providing you with information about products and services, features, surveys, newsletters, offers,
+                    promotions, contests, and events; and provide other news or information about us and our partners.
+                    You can opt-out of receiving marketing communications from us by contacting us at hello@codebell.io
+                    or following the unsubscribe instructions included in our marketing communications; (f) process and
+                    deliver contest or entries and rewards; (g) monitor and analyze trends, usage, and activities in
+                    connection with the Sites, Applications and Services and for marketing or advertising purposes; (h)
+                    investigate and prevent fraudulent transactions, unauthorized access to the Services, and other
+                    illegal activities; (i) personalize the Sites, Applications and Services, including by providing
+                    features or advertisements that match your interests and preferences; and (j) for other purposes for
+                    which we obtain your consent. </p>
+
+
+            </div>
+            <div class="bullet">
+                <p>b.</p>
+                <p>For research and development:<br>
+
+                    We are always looking for ways to make our Services smarter, secure, integrated and useful to you.
+                    We use collective learnings about how people use our Services and feedback provided to us to
+                    troubleshoot and to identify trends, usage, activity patterns and areas for integration and
+                    improvement of the Services; to analyze and improve our Site and/or Services (including developing
+                    new products and services); improving safety; managing our communications; analyzing our products;
+                    performing market research; for peer-reviewed and non-peer-reviewed clinical research; and
+                    performing data analytics.
+
+                </p>
+
+
+            </div>
+            <div class="bullet">
+                <p>c.</p>
+                <p>Account Opening Related Data:<br>
+
+                    In order to maintain integrity of the Service, Codebell must take measures to avoid creation of
+                    accounts by spammers. Each User Account is unique and associated with an individual. Therefore, a
+                    unique identifier is generated and associated with each user. Contact number is used to facilitate
+                    messaging service between one or more users of the service. The legal basis for processing is User
+                    Consent. You are free to delete your User Account and remove that data in the account panel of your
+                    Codebell User account.
+
+                </p>
+
+
+            </div>
+            <div class="bullet">
+                <p>d.</p>
+                <p>Verification:<br>
+
+                    Such data will only be used to contact you with important notifications about Codebell, to send you
+                    information related to security, to send you an invitation link to create your User Account, to
+                    verify your User Account, or to send you password recovery links if you enable the option. We may
+                    also inform you about new Codebell features in which you might have an interest. You are free, at
+                    any given time, to opt-out of those features through the account settings panel. In order to pursue
+                    our legitimate interest of preventing the creation of accounts by spam bots or human spammers,
+                    Codebell uses a variety of human verification methods. You may be asked to verify using either
+                    reCaptcha, Email, or SMS. IP addresses, email addresses, and phone numbers provided are saved
+                    temporarily in order to send you a verification code and to determine if you are a spammer.
+
+                </p>
+
+
+            </div>
+            <div class="bullet">
+                <p>e.</p>
+                <p>Unauthorized Login:<br>
+
+                    In order to detect unusual activity from your User Account, geolocation and IP addresses are used to
+                    ascertain only genuine users are using the services, and any suspicious activity is reported to the
+                    user. The legal basis for processing is our legitimate interest to prevent unauthorized use of
+                    Service and protection of user’s interest, thereby maintaining integrity of the Service. Any
+                    personal information, so collected, is stored in encrypted form on Codebell’s servers.
+
+                </p>
+
+
+            </div>
+            <div class="bullet">
+                <p>f.</p>
+                <p>Communicating with Codebell:<br>
+
+                    Your communications with the Company, such as support requests, bug reports, or feature requests may
+                    be saved by our staff. The legal basis for processing is our legitimate interest to troubleshoot
+                    more efficiently and improve the quality of the Codebell service.
+                </p>
+
+
+            </div>
+            <div class="bullet">
+                <p>g.</p>
+                <p>Payment Information:<br>
+
+                    The Company relies on third parties to process credit card, PayPal, and other payment gateways and
+                    hence the Company necessarily must share payment information with third parties. The legal basis of
+                    this processing is the necessity to the execution of the contract between you and us.
+                </p>
+
+
+            </div>
+            <div class="bullet">
+                <p>h.</p>
+                <p>With your consent:<br>
+
+                    We use information about you where you have given us consent to do so for a specific purpose not
+                    listed above. For example, we may publish testimonials or featured client stories to promote the
+                    Services, BUT ONLY with your permission.
+
+                </p>
+
+
+            </div>
+            <div class="bullet">
+                <p>i.</p>
+                <p>To protect our legitimate business interests and legal rights:<br>
+                    Where required by law or where we believe it is necessary to protect our legal rights, interests and
+                    the interests of others, we use information about you in connection with legal claims, compliance,
+                    accounting, regulatory, and audit functions, and disclosures in connection with the acquisition,
+                    merger or sale of a business.
+
+                    Please do note that Codebell will take reasonable precautions to protect your information from loss,
+                    misuse or alteration. Please be aware, however, that any text, email or other transmission you send
+                    unencrypted through the Internet cannot be completely protected against unauthorized interception.
+
+                    If you have consented to our use of information about you for a specific purpose, you have the right
+                    to change your mind at any time, but this will not affect any processing that has already taken
+                    place.
+
+                </p>
+
+
+            </div>
+
+            <h4>4. DATA USE</h4>
+            <p>Any data that we do have will never be shared except under the circumstances described below in the
+                SHARING OF PERSONAL INFORMATION. All personal information collected from You is solely used for
+                delivering, and improving the Service.</p>
+            <h4>5. SHARING OF PERSONAL INFORMATION</h4>
+            <div class="bullet">
+                <p>a.</p>
+                <p>Personally Identifiable Information:
+
+                    We will not rent or sell your personally identifiable information to others without your consent,
+                    although we may share it with partners for the purposes described above under “Use of Personal
+                    Information”, such as the provision and personalization of Services. Such third parties are not
+                    authorized to use or disclose your information except as necessary to perform Services or comply
+                    with legal requirements, and are subject to agreements requiring them to maintain the
+                    confidentiality of any such information.
+
+                    We may share your information with outside vendors that we use for a variety of purposes, such as to
+                    send you communications via emails, send push notifications to your mobile device on our behalf,
+                    help us analyse use of our services. Some of our products, services and databases are hosted by
+                    third party hosting services providers.
+
+                    Any personally identifiable information you elect to make publicly available on our Sites or through
+                    the Services will be available to others. If you remove information that you have made public on our
+                    Sites or through the Services, copies may remain viewable in cached and archived pages of our Sites
+                    or through the Services, or if other users have copied or saved that information.
+                </p>
+
+
+            </div>
+            <div class="bullet">
+                <p>b.</p>
+                <p>Non-Personally Identifiable Information:
+
+                    We may share non-personally identifiable information (such as anonymous usage data, referring/exit
+                    pages and URLs, platform types, number of clicks, etc.) with interested third parties to help us
+                    understand the usage patterns for certain Services and those of our partners.
+                </p>
+
+
+            </div>
+            <div class="bullet">
+                <p>c.</p>
+                <p>Instances Where We Are Required To Share Your Information:
+
+                    We will only disclose the limited user data we possess if we are instructed to do so by a fully
+                    binding request coming from the competent authorities (legal obligation). While we may comply with
+                    electronically delivered notices (see exceptions below), the disclosed data can only be used in
+                    court after we have received an original copy of the court order by registered post or in person,
+                    and provide a formal response.
+
+                    Codebell may from time to time, contest requests if there is a public interest in doing so. In such
+                    situations, the Company will not comply with the request until all legal or other remedies have been
+                    exhausted.
+                </p>
+
+
+            </div>
+            
+
+            <h4>6. DATA STORAGE</h4>
+            <p>All servers used in connection with the provisioning of the Service are located in India and are rented
+                by the Company from third party service providers. Only employees of the Company have physical or other
+                access to the servers. Data is ALWAYS stored in encrypted format on our servers. Offline backups may be
+                stored periodically, but these are also encrypted. We do not possess the ability to access any user
+                encrypted message content on either the production servers or in the backups.
+
+                We are committed to protecting your privacy and data. We encrypt sensitive information during
+                transmission and storage. We have put in place appropriate security measures to prevent your personal
+                data from being accidentally lost, used or accessed in an unauthorized way, altered or disclosed. In
+                addition, we limit access to your personal data to those employees, agents, contractors and other third
+                parties who have a business need to know. They will only process your personal data on our instructions
+                and they are subject to a duty of confidentiality. We have put in place procedures to deal with any
+                suspected personal data breach and will notify you, other involved parties, and any applicable
+                regulator(s) of a breach where we are legally required to do so.</p>
+
+
+            <h4>7. DATA RETENTION</h4>
+            <p>All personal information collected is retained till You delete your user account or withdraw consent on
+                the mobile app. You must appreciate that You may not continue to use our services even when you withdraw
+                consent for personal information related to visual characteristics.
+
+                The data records are deleted automatically once You request account deletion. However, deleted data may
+                be retained in our backups for up to 14 days.</p>
+
+            <h4>8. RIGHT TO ACCESS, RECTIFICATION, ERASURE, PORTABILITY, AND RIGHT TO LODGE A COMPLAINT</h4>
+
+            <p>Through the Service, you can directly access, edit, delete or export personal data processed by the
+                Company in your use of the Service. A user may access such information through the profile section in
+                our website or the mobile app.
+
+                Alternatively, any user may write an email/post-mail to Data Protection Officer for Codebell and request
+                a copy of their personal information, as held by the Company, or request modification or deletion of
+                their personal data.
+
+                Communication Details:
+
+                Name: Vikram Mali
+
+                Email: vikram@codebell.io
+
+                Address: 55, 2nd Floor, Lane 2, Westend Marg, Saidullajab, Near Saket Metro Station, New Delhi 110030
+                Delhi, India.
+
+                The Company, on receiving such request from a user, shall attend to the request made by the user and do
+                the needful within 7 days from date of such request.
+
+                If your User Account has been suspended for a breach of our terms and conditions, and you would like to
+                exercise the rights related to your personal information, you can make a request to our support team.
+
+                In case of violation of your rights, you have the right to lodge a complaint to the competent
+                supervisory authority.</p>
+
+                <h4>9. MODIFICATIONS TO PRIVACY POLICY</h4>
+                <p>Codebell reserves the right to periodically review and change this policy from time to time and we will notify users who have enabled the notification preference about changes to our Privacy Policy Your continued use of Codebell’s services constitutes your agreement to this Privacy Policy and any future revisions. Please revisit this page to stay aware of any changes. In general, we only use your personal information in the manner described in the Privacy Policy in effect when we received that personal information.
+
+                    For revisions to this Privacy Policy that may be materially less restrictive on our use or disclosure of personal information you have provided to us, we will make reasonable efforts to notify you and obtain your consent before implementing revisions with respect to such information.
+                    
+                    This policy is effective as of 01/01/2023.</p>
+        </div>
+    </section>
+
+    <div class="footer-container grey-section">
+        <section class="footer-content">
+            <div class="footer-column">
+                <div class="company-logo">
+                    <h3 class="logo-codebell"><svg width="103" height="29" viewBox="0 0 103 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.375 16.3681V16.3242C17.375 12.901 20.175 10.0352 24.0401 10.0352C27.9052 10.0352 30.664 12.8571 30.664 16.2803V16.3242C30.664 19.7473 27.864 22.6132 23.9962 22.6132C20.1283 22.6132 17.375 19.7912 17.375 16.3681ZM26.5519 16.3681V16.3242C26.5519 14.8583 25.4868 13.612 23.9962 13.612C22.4617 13.612 21.4844 14.8336 21.4844 16.2803V16.3242C21.4844 17.7901 22.5523 19.0336 24.0401 19.0336C25.5774 19.0336 26.5546 17.812 26.5546 16.3681H26.5519Z" fill="currentColor"/>
+                        <path d="M31.6895 16.3682V16.3243C31.6895 12.4125 34.1353 10.0353 36.9793 10.0353C38.802 10.0353 39.8671 10.8588 40.6687 11.7674V6.10156H44.8906V22.3251H40.6687V20.7247C39.8451 21.7239 38.802 22.5914 37.0012 22.5914C34.1573 22.5914 31.6895 20.2141 31.6895 16.3682ZM40.7483 16.3243V16.2804C40.7483 14.702 39.6502 13.5682 38.3024 13.5682C36.9546 13.5682 35.8318 14.68 35.8318 16.2804V16.3243C35.8318 17.9247 36.9436 19.0694 38.3024 19.0694C39.6612 19.0694 40.7346 17.9247 40.7346 16.3243H40.7483Z" fill="currentColor"/>
+                        <path d="M46.3555 16.3681V16.3242C46.3555 12.8132 48.8672 10.0352 52.4221 10.0352C56.5782 10.0352 58.4888 13.0795 58.4888 16.6234C58.4888 16.8979 58.4888 17.2026 58.4668 17.4908H50.4237C50.7559 18.803 51.7111 19.4673 53.0233 19.4673C54.0225 19.4673 54.8214 19.0912 55.6888 18.2457L58.0221 20.1673C56.8664 21.6359 55.2002 22.6132 52.8064 22.6132C49.0237 22.6132 46.3555 20.1014 46.3555 16.3681ZM54.5331 15.325C54.3794 13.9908 53.5998 13.1454 52.4441 13.1454C51.3323 13.1454 50.5774 14.0128 50.3551 15.325H54.5331Z" fill="currentColor"/>
+                        <path d="M64.2024 20.8702V22.3251H59.9805V6.10156H64.2024V11.902C65.026 10.9027 66.0471 10.0353 67.8452 10.0353C70.7138 10.0353 73.1789 12.4125 73.1789 16.2584V16.3023C73.1789 20.2141 70.7083 22.5914 67.8699 22.5914C67.1667 22.6101 66.4689 22.4643 65.8322 22.1654C65.1954 21.8666 64.6373 21.423 64.2024 20.8702ZM69.0256 16.338V16.2941C69.0256 14.7157 67.9275 13.582 66.555 13.582C65.1824 13.582 64.1091 14.7157 64.1091 16.2941V16.338C64.1091 17.9384 65.2071 19.0831 66.555 19.0831C67.9028 19.0831 69.0256 17.9467 69.0256 16.3243V16.338Z" fill="currentColor"/>
+                        <path d="M74.1992 16.3681V16.3242C74.1992 12.8132 76.711 10.0352 80.2659 10.0352C84.422 10.0352 86.3326 13.0795 86.3326 16.6234C86.3326 16.8979 86.3326 17.2026 86.3106 17.4908H78.2675C78.6024 18.803 79.5577 19.4673 80.8671 19.4673C81.869 19.4673 82.6678 19.0912 83.5353 18.2457L85.8686 20.1673C84.7129 21.6359 83.0467 22.6132 80.6529 22.6132C76.8675 22.6132 74.1992 20.1014 74.1992 16.3681ZM82.3769 15.325C82.2204 13.9908 81.4435 13.1454 80.2878 13.1454C79.1761 13.1454 78.4212 14.0128 78.1988 15.325H82.3769Z" fill="currentColor"/>
+                        <path d="M87.9258 6.10156H92.1477V22.3251H87.9258V6.10156Z" fill="currentColor"/>
+                        <path d="M94.2695 6.10156H98.4915V22.3251H94.2695V6.10156Z" fill="currentColor"/>
+                        <path d="M16.8284 10.9086H5.54334C5.53242 10.909 5.52154 10.9071 5.51138 10.9031C5.50121 10.8991 5.49198 10.8931 5.48425 10.8854C5.47653 10.8776 5.47048 10.8684 5.46648 10.8582C5.46247 10.8481 5.4606 10.8372 5.46099 10.8263V10.6671C5.46099 9.56236 5.89964 8.50287 6.68052 7.72147C7.4614 6.94008 8.5206 6.50073 9.6253 6.5H12.7547C13.8594 6.50073 14.9186 6.94008 15.6995 7.72147C16.4804 8.50287 16.919 9.56236 16.919 10.6671V10.8263C16.9164 10.8486 16.9058 10.8692 16.8891 10.8844C16.8725 10.8995 16.8509 10.9081 16.8284 10.9086Z" fill="currentColor"/>
+                        <path d="M12.5037 18.1875H5.45703C5.45557 19.3546 5.91724 20.4746 6.74069 21.3016C7.56415 22.1287 8.68211 22.5952 9.84919 22.5989H16.9096C16.9099 22.0199 16.7963 21.4466 16.575 20.9116C16.3538 20.3765 16.0294 19.8903 15.6203 19.4807C15.2111 19.0711 14.7253 18.746 14.1906 18.5241C13.6559 18.3022 13.0827 18.1879 12.5037 18.1875Z" fill="currentColor"/>
+                        <path d="M10.5135 18.1909H5.45703V10.6502C5.45667 10.1065 5.56339 9.56818 5.77109 9.0658C5.97879 8.56342 6.28341 8.10687 6.66755 7.72222C7.0517 7.33756 7.50784 7.03234 8.00994 6.82397C8.51205 6.6156 9.05027 6.50817 9.59389 6.50781H10.5135V18.1909Z" fill="currentColor"/>
+                        </svg>
+                    </h3>
+                </div>
+                <p class="text-4">QR Communication, intercom & tracking technology.</p>
+                <div class="social-links-company">
+                    <a href="https://www.facebook.com/codebell.io"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/codebell.io/"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/codebell_io"><svg xmlns="http://www.w3.org/2000/svg" width="18"
+                            height="18" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path
+                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/company/codebell/"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Products</h3>
+                <p><a href="index.html">Codebell Standard</a></p>
+                <p><a href="home.html">Codebell Home</a></p>
+                <p><a href="car.html">Codebell car</a></p>
+                <p><a href="pet_tag.html">Codebell Pet Tag</a></p>
+                <p><a href="luggage_tag.html">Codebell Luggage Tags</a></p>
+            </div>
+            <div class="footer-column">
+                <h3>Pages</h3>
+                <p><a href="">Search</a></p>
+                <p><a href="about_us.html">About Us</a></p>
+                <p><a href="contact.html">Contact Us</a></p>
+                <p><a href="">Become a stockist</a></p>
+                <p><a href="">Join the affiliate programme</a></p>
+            </div>
+            <div class="footer-column">
+                <h3>Get in touch</h3>
+                <p><a href="">support@CodeBell.io</a></p>
+                <p><a href="">business@Codebell.io</a></p>
+                <a href="https://www.instagram.com/codebell.io/">
+                    <div class="follow-button">
+                        <div class="btn-f">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-heart" viewBox="0 0 16 16">
+                                <path
+                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                            </svg>
+                            <p>Follow on</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    
+    
+        <div class="links-footers">
+            <p>© 2023, Codebell proudly made in Bharat in (India) </p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot"
+                viewBox="0 0 16 16">
+                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+            </svg>
+            <a href="refund_policy.html">Refund policy</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot"
+                viewBox="0 0 16 16">
+                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+            </svg>
+            <a href="privacy.html">Privacy policy</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot"
+                viewBox="0 0 16 16">
+                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+            </svg>
+            <a href="terms_of_service.html">Terms of service</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot"
+                viewBox="0 0 16 16">
+                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+            </svg>
+            <a href="shipping_policy.html">Shipping policy </a>
+        </div>
+    
+    </div>
+    
+    <script src="allColorTheme.js"></script>
+    <script src="https://device.codebell.io/js/image-token.js"></script>
+    <script src="insta-image-api.js"></script>
+    <script src="main.js"></script>
+    <script src="darkmode.js"></script>
+    </body>
+    
+    </html>
