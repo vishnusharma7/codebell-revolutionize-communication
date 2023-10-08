@@ -1,14 +1,14 @@
-// const nav = document.querySelector('.nav');
+const nav = document.querySelector('.nav');
 
-// window.addEventListener('scroll', () => {
-// const scrollY = window.scrollY;
+window.addEventListener('scroll', () => {
+const scrollY = window.scrollY;
 
-// const opacity = Math.min(0.8, scrollY / 200); // Adjust 200 to control when the effect starts
-// const blur = Math.min(5, scrollY / 10);
+const opacity = Math.min(0.8, scrollY / 200); // Adjust 200 to control when the effect starts
+const blur = Math.min(5, scrollY / 10);
 
-// nav.style.backgroundColor = `rgba(255, 255, 255, ${0})`;
-// nav.style.backdropFilter = `blur(${20}px)`;
-// });
+nav.style.backgroundColor = `rgba(255, 255, 255, ${0})`;
+nav.style.backdropFilter = `blur(${20}px)`;
+});
 // ---------------------hamburger---------------------
 const toggleBtn = document.querySelector(".mobile-view-menu-icon");
 const toggleBtnIcon = toggleBtn.querySelector("i");
