@@ -80,6 +80,7 @@ a {
     margin: auto;
     width: 100%;
     background-color: var(--bg-box);
+   background: transparent;
     top: 0;
     z-index: 5;
     transition: var(--transition);
@@ -91,7 +92,11 @@ a {
 .sticky-nav {
     position: fixed;
     box-shadow: var(--box-shadow);
-    background-color: var(--bg-color);
+    backdrop-filter: blur(20px);
+    /* background-color: var(--bg-color); */
+    
+  
+    
 }
 
 section,
@@ -2447,7 +2452,7 @@ th.header {
 
 .blur-color-holder{
     position: relative;
-    z-index: 1;
+    z-index: -1;
 }
 .color-blur{
     right: 0;
@@ -2455,7 +2460,7 @@ th.header {
     width: 250px;
     height: 500px;
     border-radius: 50%;
-  
+
     background-color: var(--primary-color);
     filter: blur(450px);
 }
