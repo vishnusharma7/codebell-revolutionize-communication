@@ -830,6 +830,7 @@ section,
     overflow: hidden;
     cursor: pointer;
     box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05), inset 0px 0px 0px 1px rgba(209, 213, 219,1);
+    /* box-shadow: 0 4px 10px -6px var(--text-color), inset 0 0px 10px -5px var(--text-color); */
     border-radius: 1em;
     transition: var(--transition);
     box-shadow: 0 1px 1px  var(--primary-color)
@@ -2609,3 +2610,119 @@ th.header {
     }
   }
   
+
+
+
+
+
+  /* how to start part */
+/* .how-to-start{
+    display: flex;
+    flex-direction: column;
+}
+.line-vertical{
+    height: 1px;
+    background-color: #d2d6d7;
+    flex-grow: 1;
+    
+} */
+.hts-wrapper{
+
+    display: flex;
+}
+.hts-left{
+    padding: 2em;
+    flex: 1;
+    width: calc(100% - 4em);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    line-height: 1.8;
+}
+.hts-left p{
+    color: var(--sub-text-color);
+  
+}
+.hts-right{
+    flex: 1;
+}
+.hts-right img{ 
+
+}
+.hts-head{
+    display: flex;
+    align-self: start;
+    align-items: center;
+    gap: 1em;
+}
+
+.hts-head h1{
+    color: var(--text-color);
+
+}
+.hts-wrapper h2{
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 1.8em;
+}
+.hts-ticks-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.hts-tick{
+    display: flex;
+    align-self: start;
+    gap: 1em;
+    color: var(--sub-text-color);
+}
+
+
+/* CSS (for line and ball) */
+.hts-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden; 
+    position: relative; 
+}
+
+.line-container {
+    display: flex;
+    border-radius: 20px;
+    width: 0.2em; 
+    background-color: var(--text-color); 
+    position: absolute; 
+    left: 1em;
+    bottom: 45%;
+}
+
+.line {
+    height: 0; 
+    position: relative; 
+    transition: height 0.5s ease-in-out;
+}
+
+.ball {
+    width: 20px; 
+    height: 20px;
+    background-color: var(--primary-color); 
+    border-radius: 50%; 
+    position: absolute; 
+    left: -0.5em;
+    transform: translateY(-50%); 
+    transition: top 0.5s ease-in-out; 
+    z-index: 1;
+}
+@media screen and (max-width:990px) {
+    .line-container{
+        display: none;
+    }
+    .hts-left{
+        padding: 0;
+    }
+    .hts-wrapper{
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+}
