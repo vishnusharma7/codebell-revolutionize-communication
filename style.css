@@ -2713,6 +2713,10 @@ th.header {
     z-index: 1;
 }
 @media screen and (max-width:990px) {
+    .hts-container {
+        overflow: visible; /* Disable overflow for small screens */
+      
+    }
     .line-container{
         display: none;
     }
@@ -2723,5 +2727,12 @@ th.header {
         flex-direction: column;
         align-items: center;
         gap: 2em;
+    }
+    #hts-2, #hts-3, #hts-4{
+        display: flex !important; 
+
+    }
+    .hts-content {
+        overflow-y: auto; /* Enable scrolling for content on small screens */
     }
 }
