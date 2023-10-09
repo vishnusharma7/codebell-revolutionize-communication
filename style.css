@@ -2646,9 +2646,7 @@ th.header {
 .hts-right{
     flex: 1;
 }
-.hts-right img{ 
 
-}
 .hts-head{
     display: flex;
     align-self: start;
@@ -2692,6 +2690,7 @@ th.header {
     width: 0.2em; 
     background-color: var(--text-color); 
     position: absolute; 
+    top: 5%;
     left: 1em;
     bottom: 45%;
 }
