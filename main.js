@@ -40,10 +40,27 @@ window.onscroll = function () {
   }
 };
 
+let heroSectionSlide = new Swiper(".container", {
+  
+  grabCursor: true,
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 6000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+   
+  },
+  
+});
+
 
 
 let reviewCustomer = new Swiper(".reviews-feedback", {
-  spaceBetween: 15,
+  spaceBetween: 5,
   grabCursor: true,
   centeredSlides: true,
   loop: true,
@@ -63,7 +80,7 @@ let reviewCustomer = new Swiper(".reviews-feedback", {
     },
     1200: {
       slidesPerView: 3,
-      spaceBetween: 15,
+      spaceBetween: 10,
     },
     0: {
       slidesPerView: 1,
@@ -77,23 +94,6 @@ let reviewCustomer = new Swiper(".reviews-feedback", {
   },
 });
 
-
-let heroSectionSlide = new Swiper(".container", {
-  
-  grabCursor: true,
-  centeredSlides: true,
-  loop: true,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-   
-  },
-  
-});
 
 
 let appSSContainer = new Swiper(".app-ss-content", {

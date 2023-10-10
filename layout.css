@@ -46,7 +46,9 @@
 .gap-1 {
     gap: 1rem;
 }
-
+.gap-2{
+    gap: 2em;
+}
 .text-center{
     text-align: center;
 }
