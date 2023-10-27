@@ -13,8 +13,8 @@ themesText.classList.add("themes-text");
 // Create an SVG element which is fixed at right position
 const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
 svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
-svg.setAttribute("width", "20");
-svg.setAttribute("height", "20");
+svg.setAttribute("width", "18");
+svg.setAttribute("height", "18");
 svg.setAttribute("fill", "currentColor");
 svg.classList.add("bi", "bi-palette-fill");
 svg.setAttribute("viewBox", "0 0 16 16");

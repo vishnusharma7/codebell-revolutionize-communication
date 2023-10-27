@@ -1,0 +1,29 @@
+{
+    "name": "Codebell",
+    "short_name": "Codebell",
+    "description": "Codebell is Scan To Call, Video call application for visitors. It can be used as Cloudbased Video Intercome",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "categories": [
+      "lifestyle",
+      "education",
+      "productivity",
+      "security",
+      "social",
+      "utilities"
+    ],
+    "theme_color": "#0C87C9",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "start_url": "/"
+}

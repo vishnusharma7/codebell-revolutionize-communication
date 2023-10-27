@@ -30,6 +30,7 @@
 .flex.middle{
     align-items: center;
 }
+
 .flex.top{
     align-items: start;
 }
@@ -40,17 +41,30 @@
 .flex.between{
     justify-content: space-between;
 }
+.flex.flex-1{
+    flex: 1;
+}
 .w-auto{
     width: auto;
 }
+.gap{
+    gap: 1em;
+}
 .gap-1 {
-    gap: 1rem;
+    gap: 1.5rem;
 }
 .gap-2{
     gap: 2em;
 }
+
 .text-center{
     text-align: center;
+}
+.pdt{
+    padding-top: 4.5em;
+}
+.pdb{
+    padding-bottom: 4.5em;
 }
 
 .pbf{
@@ -59,5 +73,12 @@
 
 address{
     white-space: pre-wrap;
+    margin: auto;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
     margin: auto;
 }
